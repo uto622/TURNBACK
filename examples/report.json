@@ -1,0 +1,38 @@
+{
+  "report_id": "8a4c9b2d-1a3f-4e21-9f6b-6d9b7c0a4c31",
+  "timestamp_utc": "2025-12-18T23:41:00+00:00",
+  "issue": {
+    "type": "SPEAKER_FOCUS",
+    "severity": 2,
+    "expected_behavior": "",
+    "actual_behavior": "",
+    "reproduction_steps": []
+  },
+  "evidence": {
+    "sanitized_transcript": "U: 我刚才在跟你说那个问题，其实我还没说完……\n(background: someone nearby speaks)\nA: 好的，我们重新开始。\nU: 没有，我刚才只是停顿了一下，我还在想。\nA: 抱歉，请继续。",
+    "signals": {
+      "overlap_detected": false,
+      "background_speech_or_noise": true,
+      "speaker_marker_count": 0,
+      "interruption_markers": true,
+      "thinking_pause_markers": true
+    }
+  },
+  "privacy": {
+    "redaction_enabled": true
+  },
+  "labels": [
+    "turnback",
+    "conversation-failure",
+    "voice"
+  ]
+}
+解释（工程视角）
+
+background_speech_or_noise = true
+
+thinking_pause_markers = true
+
+系统却 重置对话
+→ Speaker Focus Failure 被正确触发
+同时也记录了 Interruption 信号（供人工判断）
