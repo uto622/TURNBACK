@@ -1,4 +1,4 @@
-# ② `docs/taxonomy.md`
+# ② `taxonomy.md`
 
 ```md
 # TURNBACK Issue Taxonomy
