@@ -21,7 +21,7 @@ A: 好的，我们重新开始。
 U: 没有，我刚才只是停顿了一下，我还在想。
 A: 抱歉，请继续。
 
-6. Observed Signals
+## 6. Observed Signals
 
 background_speech_or_noise: true
 
@@ -29,10 +29,10 @@ thinking_pause_markers: true
 
 interruption_markers: true
 
-7. Severity
+## 7. Severity
 
  1 - [x] 2 - [ ] 3 - [ ] 4
 
-8. Consent & Responsibility
+## 8. Consent & Responsibility
 
 Submitted content is sanitized or submitted at the reporter’s responsibility.
