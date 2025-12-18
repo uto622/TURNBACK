@@ -1,0 +1,22 @@
+U: 我刚才在跟你说那个问题，其实我还没说完……
+(background: someone nearby speaks)
+A: 好的，我们重新开始。
+U: 没有，我刚才只是停顿了一下，我还在想。
+A: 抱歉，请继续。
+
+这个样例刻意包含：
+
+人类 思考性停顿
+
+背景说话
+
+模型 错误重置 + 打断
+
+非身份、非隐私、非政治内容
+→ 正好命中 TURNBACK v0.1 的两个核心问题
+
+运行示例（完整闭环）
+python tools/turnback_cli.py examples/transcript.txt \
+  --redact \
+  --out examples/report.json \
+  --issue-md examples/issue.md
